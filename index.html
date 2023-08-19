@@ -385,7 +385,8 @@
                 placeholder="E-mail" />
             </label>
             <button class="subscription-button" type="submit">
-              Subscribe<svg width="24" heigt="24px">
+              Subscribe<a href="#"></a>
+              <svg width="24" heigt="24px">
                 <use href="./img/icons.svg#icon-Frame-3"></use>
               </svg>
             </button>
@@ -401,6 +402,66 @@
             <use href="./img/icons.svg#icon-close-black-18dp-2-1"></use>
           </svg>
         </button>
+        <p class="modal-topline">
+          Leave your contacts and we will call you back
+        </p>
+
+        <form name="order service">
+          <div class="form-box">
+            <label>
+              Name<br />
+              <div>
+                <input class="form-item" type="text" name="username" />
+                <svg>
+                  <use href="./img/icons.svg#icon-Frame-1"></use>
+                </svg>
+              </div>
+            </label>
+            <label
+              >Phone <br />
+              <div>
+                <input class="form-item" type="text" name="username" />
+                <svg>
+                  <use href="./img/icons.svg#icon-phone-black-18dp-1"></use>
+                </svg>
+              </div>
+              <input class="form-item" type="tel" name="usertel"
+            /></label>
+
+            <label
+              >E-mail<br />
+              <div>
+                <input class="form-item" type="text" name="username" />
+                <svg>
+                  <use href="./img/icons.svg#icon-email-black-18dp-1"></use>
+                </svg>
+              </div>
+              <input class="form-item" type="email" name="useremail"
+            /></label>
+            <label
+              >Comment
+              <textarea
+                class="textarea"
+                name="usercomment"
+                placeholder="Text input"></textarea>
+            </label>
+          </div>
+          <label
+            ><div class="checkbox">
+              <input
+                class="check-box"
+                type="checkbox"
+                name="regulaminaccept"
+                value="regulamin" /><span class="text-checkbox">
+                I accept the terms and conditions of<span
+                  class="text-checkbox-underline">
+                  the Privacy Police</span
+                ></span
+              >
+            </div>
+          </label>
+          <button class="send-button" type="submit">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
