@@ -723,3 +723,15 @@ ul {
   color: var(--cloud);
   font-style: normal;
 }
+.np {
+  position: relative;
+  cursor: pointer;
+}
+.npnp {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 16px;
+  height: 16px;
+  opacity: 0;
+}

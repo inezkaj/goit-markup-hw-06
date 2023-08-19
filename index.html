@@ -382,7 +382,8 @@
                 class="email-item"
                 type="email"
                 name="email"
-                placeholder="E-mail" />
+                placeholder="E-mail"
+                required />
             </label>
             <button class="subscription-button" type="submit">
               Subscribe<a href="#"></a>
@@ -399,7 +400,7 @@
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>
           <svg class="close-btn2" width="8px" height="8px">
-            <use href="./img/icons.svg#icon-close-black-18dp-2-1"></use>
+            <use href="./img/icons.svg#icon-Frame-3"></use>
           </svg>
         </button>
         <p class="modal-topline">
@@ -410,40 +411,38 @@
           <div class="form-box">
             <label>
               Name<br />
-              <div>
-                <input class="form-item" type="text" name="username" />
-                <svg>
+              <div class="np">
+                <input class="form-item" type="text" name="username" required />
+                <svg class="npnp">
                   <use href="./img/icons.svg#icon-Frame-1"></use>
                 </svg>
               </div>
             </label>
             <label
               >Phone <br />
-              <div>
-                <input class="form-item" type="text" name="username" />
-                <svg>
+              <div class="np">
+                <input class="form-item" type="text" name="username" required />
+                <svg class="npnp">
                   <use href="./img/icons.svg#icon-phone-black-18dp-1"></use>
-                </svg>
-              </div>
-              <input class="form-item" type="tel" name="usertel"
-            /></label>
+                </svg></div
+            ></label>
 
             <label
               >E-mail<br />
-              <div>
-                <input class="form-item" type="text" name="username" />
-                <svg>
+              <div class="np">
+                <input class="form-item" type="text" name="username" required />
+                <svg class="npnp">
                   <use href="./img/icons.svg#icon-email-black-18dp-1"></use>
                 </svg>
               </div>
-              <input class="form-item" type="email" name="useremail"
-            /></label>
+            </label>
             <label
               >Comment
               <textarea
                 class="textarea"
                 name="usercomment"
-                placeholder="Text input"></textarea>
+                placeholder="Text input"
+                required></textarea>
             </label>
           </div>
           <label
