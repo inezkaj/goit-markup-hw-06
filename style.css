@@ -634,12 +634,11 @@ ul {
 .textarea:hover,
 .text-area:focus-within {
   border-color: var(--iris);
-  border-radius: 4px;
   border: 1px solid var(--iris);
 }
 .input-wrapper:hover .icon-form-item,
 .input-wrapper:focus .icon-form-item {
-  color: var(--iris);
+  fill: var(--iris);
 }
 
 .icon-form-item {
