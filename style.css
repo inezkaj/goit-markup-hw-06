@@ -623,7 +623,7 @@ ul {
 }
 .name-form-item {
   position: absolute;
-  opacity: 0;
+  opacity: 1;
   top: 11px;
   left: 16px;
   width: 18px;
@@ -631,7 +631,7 @@ ul {
 }
 .phone-form-item {
   position: absolute;
-  opacity: 0;
+  opacity: 1;
   top: 8px;
   left: 16px;
   width: 18px;
@@ -639,7 +639,7 @@ ul {
 }
 .email-form-item {
   position: absolute;
-  opacity: 0;
+  opacity: 1;
   top: 8px;
   left: 16px;
   width: 18px;
