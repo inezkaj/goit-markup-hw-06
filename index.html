@@ -409,30 +409,39 @@
 
         <form name="order service">
           <div class="form-box">
-            <label>
+            <label for="username">
               Name
-
-              <input class="form-item" type="text" name="username" required />
-              <svg class="name-form-item">
-                <use href="./img/icons.svg#icon-Frame-1"></use>
-              </svg>
+              <div class="input-wrapper">
+                <svg class="name-form-item">
+                  <use href="./img/icons.svg#icon-Frame-1"></use>
+                </svg>
+                <input
+                  class="form-item"
+                  type="text"
+                  name="username"
+                  id="username"
+                  required />
+              </div>
             </label>
-            <label
+
+            <label for="phoneno"
               >Phone
-
-              <input class="form-item" type="text" name="username" required />
-              <svg class="phone-form-item">
-                <use href="./img/icons.svg#icon-phone-black-18dp-1"></use>
-              </svg>
+              <div class="input-wrapper2">
+                <svg class="phone-form-item">
+                  <use href="./img/icons.svg#icon-phone-black-18dp-1"></use>
+                </svg>
+                <input class="form-item" type="text" name="username" required />
+              </div>
             </label>
 
-            <label
+            <label for="email"
               >E-mail
-
-              <input class="form-item" type="text" name="username" required />
-              <svg class="email-form-item">
-                <use href="./img/icons.svg#icon-email-black-18dp-1"></use>
-              </svg>
+              <div class="input-wrapper3">
+                <svg class="email-form-item">
+                  <use href="./img/icons.svg#icon-email-black-18dp-1"></use>
+                </svg>
+                <input class="form-item" type="text" name="username" required />
+              </div>
             </label>
             <label
               >Comment
@@ -450,11 +459,12 @@
                 type="checkbox"
                 name="regulaminaccept"
                 value="regulamin" /><span class="text-checkbox">
-                I accept the terms and conditions of<span
-                  class="text-checkbox-underline">
-                  the Privacy Police</span
-                ></span
-              >
+                I accept the terms and conditions of<a
+                  class="text-checkbox-underline"
+                  href="#">
+                  the Privacy Police</a
+                >
+              </span>
             </div>
           </label>
           <button class="send-button" type="submit">Send</button>
