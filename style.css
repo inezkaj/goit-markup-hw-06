@@ -618,7 +618,6 @@ ul {
   border-radius: 4px;
   border: 1px solid var(--iris);
   margin-top: 4px;
-  position: relative;
   cursor: pointer;
 }
 
