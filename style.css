@@ -386,13 +386,10 @@ ul {
   padding-left: 16px;
   padding-bottom: 32px;
   padding-top: 32px;
-  border: 1px solid var(--cornflower);
-  border-top: none;
-}
-
-.table-activities {
   padding-left: 16px;
   padding-right: 16px;
+  border: 1px solid var(--cornflower);
+  border-top: none;
 }
 
 .buttonlist-setup {
@@ -527,6 +524,7 @@ ul {
 }
 .subscription-button {
   margin-left: 30px;
+  margin-top: 16px;
   color: white;
   width: 165px;
   height: 40px;
@@ -543,6 +541,7 @@ ul {
   justify-content: center;
   gap: 16px;
   border-radius: 4px;
+  border: 0px;
 }
 .subscription-button:hover,
 .subscription-button:focus {
@@ -558,6 +557,10 @@ ul {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.32px;
+}
+.formsubscription {
+  display: flex;
+  flex-direction: row;
 }
 .footer-setup {
   display: flex;
@@ -600,6 +603,7 @@ ul {
   display: flex;
   gap: 8px;
   width: 360px;
+  height: 336px;
   flex-direction: column;
   align-items: flex-start;
   border-radius: 4px;
@@ -616,51 +620,45 @@ ul {
   width: 360px;
   height: 40px;
   border-radius: 4px;
-  border: 1px solid var(--iris);
-  margin-top: 4px;
+  border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4));
   cursor: pointer;
+  margin-top: 0;
+  padding-inline-start: 38px;
 }
 
 .input-wrapper {
   position: relative;
 }
-.input-wrapper:hover,
-.input-wrapper:focus {
+.form-item:hover,
+.form-item:focus,
+.textarea:hover,
+.text-area:focus-within {
   border-color: var(--iris);
+  border-radius: 4px;
+  border: 1px solid var(--iris);
 }
-.input-wrapper:hover-within .name-form-item,
-.input-wrapper:focud-within .name-form-item {
+.input-wrapper:hover .icon-form-item,
+.input-wrapper:focus .icon-form-item {
   color: var(--iris);
 }
 
-.name-form-item {
+.icon-form-item {
   position: absolute;
-  top: 11px;
+  top: 50%;
+  translate: 0 -50% 0;
   left: 16px;
   width: 18px;
   height: 18px;
 }
-.phone-form-item {
-  position: absolute;
-  top: 8px;
-  left: 16px;
-  width: 18px;
-  height: 24px;
-}
-.email-form-item {
-  position: absolute;
-  top: 8px;
-  left: 16px;
-  width: 18px;
-  height: 24px;
-}
+
 .textarea {
   width: 360px;
   height: 120px;
-  border-radius: 4px;
-  border: 1px solid var(--iris);
-  margin-top: 4px;
+  padding-top: 8px;
   padding-left: 16px;
+  border-radius: 4px;
+  border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4));
+  cursor: pointer;
 }
 .checkbox {
   margin: 16px 24px 24px 24px;
@@ -734,12 +732,13 @@ ul {
   position: relative;
   overflow: hidden;
 }
-.animation-box:hover .box-item,
-.animation-box:focus .box-item {
+.listofpicture-setup li:hover .box-item,
+.listofpicture-setup li:focus .box-item {
   transform: translateY(0);
   transition-duration: var(--trans-duration);
   transition-timing-function: var(--trans-function);
 }
+
 .box-item {
   position: absolute;
   top: 0;
@@ -751,6 +750,7 @@ ul {
   transition-duration: var(--trans-duration);
   transition-timing-function: var(--trans-function);
 }
+
 .box-item p {
   margin: 40px 32px 164px 32px;
   font-family: Roboto;
