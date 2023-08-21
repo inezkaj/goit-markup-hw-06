@@ -666,6 +666,11 @@ ul {
 .checkbox {
   margin: 16px 24px 24px 24px;
 }
+.checkbox:hover,
+.checkbox:focus {
+  background-color: var(--ocean);
+  fill: white;
+}
 .check-box {
   width: 16px;
   height: 16px;
@@ -700,8 +705,7 @@ ul {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border: none;
   margin-left: 119px;
   margin-bottom: 24px;
 }
@@ -727,6 +731,11 @@ ul {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+}
+.close-btn:hover,
+.close-btn:focus {
+  background-color: var(--ocean);
+  fill: white;
 }
 .close-btn2 {
   margin: 5px 0px 0px 0px;
