@@ -651,7 +651,8 @@ ul {
 }
 
 .input-wrapper:hover .icon-form-item,
-.input-wrapper:focus .icon-form-item {
+.input-wrapper:focus .icon-form-item,
+.input-wrapper:focus-within .icon-form-item {
   fill: var(--iris);
 }
 
