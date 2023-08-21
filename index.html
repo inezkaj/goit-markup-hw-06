@@ -376,12 +376,8 @@
         </div>
         <div class="email-input">
           <p class="subscribe-title">Subscribe</p>
-          <form
-            class="formsubscription"
-            name="subscription"
-            autocomplete="off"
-            novalidate>
-            <label>
+          <form class="formsubscription" name="subscription">
+            <label for="submail">
               <input
                 class="email-item"
                 type="email"
@@ -431,7 +427,12 @@
               <svg class="icon-form-item">
                 <use href="./img/icons.svg#icon-phone-black-18dp-1"></use>
               </svg>
-              <input class="form-item" type="text" name="username" required />
+              <input
+                class="form-item"
+                type="number"
+                name="phoneno"
+                id="phoneno"
+                required />
             </div>
 
             <label for="email">E-mail</label>
@@ -439,15 +440,19 @@
               <svg class="icon-form-item">
                 <use href="./img/icons.svg#icon-email-black-18dp-1"></use>
               </svg>
-              <input class="form-item" type="text" name="username" required />
+              <input
+                class="form-item"
+                type="email"
+                name="email"
+                id="email"
+                required />
             </div>
 
             <label>Comment </label>
             <textarea
               class="textarea"
               name="usercomment"
-              placeholder="Text input"
-              required></textarea>
+              placeholder="Text input"></textarea>
           </div>
           <label
             ><div class="checkbox">
@@ -455,7 +460,8 @@
                 class="check-box"
                 type="checkbox"
                 name="regulaminaccept"
-                value="regulamin" /><span class="text-checkbox">
+                value="regulamin"
+                required /><span class="text-checkbox">
                 I accept the terms and conditions of<a
                   class="text-checkbox-underline"
                   href="#">
