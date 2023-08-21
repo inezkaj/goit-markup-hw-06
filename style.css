@@ -640,10 +640,6 @@ ul {
   border-color: var(--iris);
   border: 1px solid var(--iris);
 }
-.input-wrapper:hover .icon-form-item,
-.input-wrapper:focus .icon-form-item {
-  fill: var(--iris);
-}
 
 .icon-form-item {
   position: absolute;
@@ -652,6 +648,11 @@ ul {
   left: 16px;
   width: 18px;
   height: 18px;
+}
+
+.input-wrapper:hover .icon-form-item,
+.input-wrapper:focus .icon-form-item {
+  fill: var(--iris);
 }
 
 .textarea {
