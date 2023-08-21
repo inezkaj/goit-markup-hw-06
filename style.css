@@ -666,8 +666,8 @@ ul {
 .checkbox {
   margin: 16px 24px 24px 24px;
 }
-.checkbox:hover,
-.checkbox:focus {
+input [type="checkbox"]:hover,
+input [type="checkbox"]:focus {
   background-color: var(--ocean);
   fill: white;
 }
